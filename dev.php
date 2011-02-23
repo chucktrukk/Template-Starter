@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="assets/css/style.css?v=1">
   <link rel="stylesheet" href="assets/js/plugins/colorbox/v1/colorbox.css?v=1">
  
-  <!-- All JavaScript at the bottom, except for Modernizr which enables assets elements & feature detects -->
+  <!-- All JavaScript at the top, we don't know if another snippet/plugin will insert js. Someone may insert JS into a TV -->
   <script src="assets/js/libs/modernizr-1.6.min.js"></script>
 
   <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
