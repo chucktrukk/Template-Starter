@@ -41,7 +41,7 @@
 
 </head>
 
-<body lang="en" data-template="home" data-docid="1">
+<body lang="en" data-template="home" data-docid="doc1">
 
   <div id="container">
     <header>
