@@ -279,11 +279,20 @@ header nav {
 #side {
 }
 
+#side p {
+  margin-bottom: 20px;
+}
+
 #side .newsletter,
 #side .rss-feed,
 #side .contact-us {
   display: block;
   margin-bottom: 5px;
+}
+
+
+footer {
+  padding: 20px 0;
 }
 
 #footer-nav {
