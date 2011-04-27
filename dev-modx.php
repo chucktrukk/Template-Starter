@@ -41,12 +41,12 @@
 
 </head>
 
-<body lang="en" data-template="home" data-docid="doc1">
+<body lang="en" data-template="{{ page.template }}" data-docid="{{ page.id }}">
 
   <div id="container">
     <header>
       
-      <a id="logo" href="#"><span>Site Name Here</span></a>
+      <a id="logo" href="/"><span>{{ site.name }}</span></a>
             
       <nav>
         <ul id="main-nav" class="sf-menu">
@@ -97,7 +97,7 @@
     <footer>
       
       <div class="copyright grid3">
-        Copyright &copy; 2009-2010. All rights reserved<br/>
+        Copyright &copy; 2009-{{ now|date('Y') }}. All rights reserved<br/>
         Developed by: <a href="http://www.prowebscape.com">ProWebscape.com</a>
       </div>
       
@@ -144,7 +144,7 @@
   <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
   <script>
    var _gaq = _gaq || [];
-   _gaq.push(['_setAccount', 'UA-XXXXX-X']);
+   _gaq.push(['_setAccount', '{{ site.google_analytics }}']);
    _gaq.push(['_trackPageview']);
    (function() {
     var ga = document.createElement('script');

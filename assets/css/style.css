@@ -177,6 +177,7 @@ body {
 
 header {
   position: relative;
+  height: 100px; /* We can usually set the height here. Or somewhere inside the header. */
 }
 
 a#logo {
@@ -192,7 +193,10 @@ header nav {
   z-index: 10;
 }
 
-#main-nav {}
+#main-nav {
+  height: 48px;
+  background-color: #e3e3e3; /* remove test- if setting height */
+}
 
 #main-nav > li {
   display: inline;
@@ -206,15 +210,42 @@ header nav {
   text-decoration: none;
   font-size: 16px;
   background: url(../images/nav-divider.png) left top no-repeat;
+  background-color: green; /* remove test- if setting height */
 }
 
 #main-nav > li > a:hover,
 #main-nav > li.active > a {
-  color: #ba2028;
+  color: #fff;
 }
 
 #main-nav > li.first > a {
   background: none;
+  background-color: green; /* remove test- if setting height */
+}
+
+#main-nav > li > a.sf-with-ul {
+  padding-right: 24px;
+}
+
+#main-nav > li > a > .sf-sub-indicator {
+  right: 5px;
+  top: 20px;
+}
+
+#main-nav li ul {
+  top: 48px;
+}
+
+#main-nav li ul li a {
+  display: block;
+  padding: 10px 10px;
+  background: #000 url(../images/superfish/superfish-dropdown-div.png) left bottom repeat-x;
+  color: #fff;
+}
+
+#main-nav li ul li a:hover {
+  background-color: #666;
+  color: #fff;
 }
 
 .ie6 #main-nav li {
@@ -275,6 +306,10 @@ header nav {
   color: #ba2028;
 }
 
+#footer-nav li ul {
+  display: none;
+}
+
 .copyright,
 .developed-by {
   color: #828282;
@@ -310,9 +345,12 @@ header nav {
 
 /* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements.
    j.mp/bestclearfix */
+.clear:before, .clear:after,
 .clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; visibility: hidden; }
+.clear:after,
 .clearfix:after { clear: both; }
 /* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
+.clear,
 .clearfix { zoom: 1; }
 
 

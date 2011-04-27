@@ -77,6 +77,7 @@ SITE = {
   common: {
     init: function() {
       // application-wide code
+      COMMON.superfish('#main-nav');
       COMMON.hover_image();
       COMMON.iframe_colorbox();
       COMMON.js_back();
