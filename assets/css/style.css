@@ -162,7 +162,6 @@ button {  width: auto; overflow: visible; }
 a { outline: none; border: none; }
 /**
  * Primary styles
- *
  * Author: ProWebscape
  */
 
@@ -267,20 +266,16 @@ header nav {
   color: #ba2028;
 }
 
-.content {
+.main {
   font-size: 14px;
   line-height: 1.5em;
 }
 
-.content p {
+.main p {
   margin-bottom: 25px;
 }
 
-#side {
-}
-
-#side p {
-  margin-bottom: 20px;
+.side {
 }
 
 #side .newsletter,

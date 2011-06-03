@@ -10,6 +10,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <title></title>
+  <base href=""></base>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -41,12 +42,12 @@
 
 </head>
 
-<body lang="en" data-template="{{ page.template }}" data-docid="{{ page.id }}">
+<body lang="en" data-template="home" data-docid="doc1">
 
   <div id="container">
     <header>
       
-      <a id="logo" href="/"><span>{{ site.name }}</span></a>
+      <a id="logo" href="#"><span>Site Name Here</span></a>
             
       <nav>
         <ul id="main-nav" class="sf-menu">
@@ -77,24 +78,45 @@
       </nav>
     </header>
     
-    <div id="main" role="main" class="grid9 first">
+    <div class="main">
 
-      <div class="content">
-      </div><!-- e: content -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       
     </div><!-- e: #main -->
     
 
     
-    <div id="side" class="grid3">
-
+    <div class="side">
+      <div class="block" id="list-items"> 
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. </p> 
+				<h5>A menu</h5> 
+				<ul class="menu"> 
+					<li><a href="#">Item 1</a></li> 
+					<li><a href="#">Item 2</a></li> 
+					<li><a href="#">Item 3</a></li> 
+				</ul>
+				 
+				<h5>An unordered list</h5> 
+				<ul> 
+					<li><a href="#">Item 1</a></li> 
+					<li><a href="#">Item 2</a></li> 
+					<li><a href="#">Item 3</a></li> 
+				</ul> 
+				<h5>An ordered list</h5> 
+				<ol> 
+					<li><a href="#">Item 1</a></li> 
+					<li><a href="#">Item 2</a></li> 
+					<li><a href="#">Item 3</a></li> 
+				</ol> 
+			</div> 
     </div><!-- e: #side -->
     
     <div class="clear">&nbsp;</div>
     
     <footer>
       
-      <div class="footer-links grid9">
+      <div class="footer-links grid9 first">
         <ul id="footer-nav">
           <li class="first"><a href="#">Home</a>
             <ul>
@@ -123,7 +145,7 @@
       </div><!-- e: .footer-links -->
 
       <div class="copyright grid3">
-        Copyright &copy; 2009-{{ now|date('Y') }}. All rights reserved<br/>
+        Copyright &copy; 2009-2011. All rights reserved<br/>
         Developed by: <a href="http://www.prowebscape.com">ProWebscape.com</a>
       </div>
       
@@ -134,7 +156,7 @@
   <!-- JavaScript at the bottom for fast page loading -->
 
   <!--[if lt IE 7 ]>
-    <script src="js/libs/dd_belatedpng.js"></script>
+    <script src="assets/js/libs/dd_belatedpng.js"></script>
     <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
   <![endif]-->
 
@@ -142,7 +164,7 @@
   <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
   <script>
    var _gaq = _gaq || [];
-   _gaq.push(['_setAccount', '{{ site.google_analytics }}']);
+   _gaq.push(['_setAccount', 'UA-XXXXX-X']);
    _gaq.push(['_trackPageview']);
    (function() {
     var ga = document.createElement('script');
